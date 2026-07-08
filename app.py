@@ -19,7 +19,7 @@ if not GEMINI_API_KEY:
     )
 
 genai.configure(api_key=GEMINI_API_KEY)
-MODEL_NAME = "gemini-2.5-flash"  # free-tier eligible, strong at structured extraction
+MODEL_NAME = "gemini-2.5-flash-lite"  # free-tier eligible, strong at structured extraction
 
 RESPONSE_SCHEMA = {
     "type": "object",
