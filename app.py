@@ -24,12 +24,12 @@ MODEL_NAME = "gemini-2.5-flash"  # free-tier eligible, strong at structured extr
 RESPONSE_SCHEMA = {
     "type": "object",
     "properties": {
-        "invoice_no": {"type": ["string", "null"]},
-        "date": {"type": ["string", "null"]},
-        "vendor": {"type": ["string", "null"]},
-        "amount": {"type": ["number", "null"]},
-        "tax": {"type": ["number", "null"]},
-        "currency": {"type": ["string", "null"]},
+        "invoice_no": {"type": "string", "nullable": True},
+        "date": {"type": "string", "nullable": True},
+        "vendor": {"type": "string", "nullable": True},
+        "amount": {"type": "number", "nullable": True},
+        "tax": {"type": "number", "nullable": True},
+        "currency": {"type": "string", "nullable": True},
     },
     "required": ["invoice_no", "date", "vendor", "amount", "tax", "currency"],
 }
